@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomometer</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Pomometer</h1>
+
+    <div class="progress-container">
+        <svg class="progress-ring" width="150" height="150">
+            <circle class="progress-ring__circle" stroke-width="10" fill="transparent" r="70" cx="75" cy="75"/>
+        </svg>
+        <div id="timer-display" class="timer-display">25:00</div>
+    </div>
+
+    <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <hr>
+
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required />
+        <input type="number" id="pomodoro-goal" value="1" required min="1" max="18" />
+        <button type="submit" id="add-task-button">Add Task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+</div>
+
+
+      <script type="module" src="index.js"></script>
+  </body>
+</html>

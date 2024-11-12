@@ -1,0 +1,19 @@
+{
+  "name": "pomometer",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
